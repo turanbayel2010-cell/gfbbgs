@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню игр</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Выберите игру</h1>
+<ul>
+    <li><button onclick="startGame('Игра 1')">Игра 1</button></li>
+    <li><button onclick="startGame('Игра 2')">Игра 2</button></li>
+    <li><button onclick="startGame('Игра 3')">Игра 3</button></li>
+</ul>
+
+<script>
+    function startGame(gameName) {
+        alert('Запускаем ' + gameName + '...');
+        // Здесь можно добавить код для запуска игры
+        // Например, перенаправление на другую страницу с игрой:
+        // window.location.href = gameName + '.html';
+    }
+</script>
+
+</body>
+</html>
